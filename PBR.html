@@ -1,0 +1,926 @@
+// ===== page.tsx =====
+import React from 'react';
+
+const LandingPage = () => {
+  return (
+    <div className="landing-page">
+      {/* Hero Section */}
+      <section id="hero" className="min-h-screen flex-center bg-primary text-white relative overflow-hidden pt-32 pb-20">
+        <div className="container-section z-10">
+          <h1 className="text-5xl md:text-7xl font-bold mb-10 leading-tight">
+            Predictive Business Reframing™
+          </h1>
+          <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed">
+            Convierte los desafíos de tu negocio en problemas de predicción aplicables a IA
+          </p>
+          <div className="cta-container">
+            <a href="#contacto" className="btn-primary text-lg">
+              Agenda tu Diagnóstico
+            </a>
+            <a href="#beneficios" className="btn-outline text-lg">
+              Conoce más
+            </a>
+          </div>
+        </div>
+        <div className="absolute inset-0 bg-gradient-radial from-secondary/10 via-primary/80 to-primary"></div>
+      </section>
+
+      {/* Beneficios Clave */}
+      <section id="beneficios" className="py-24 bg-light">
+        <div className="container-section">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-primary">
+            Beneficios Clave
+          </h2>
+          <p className="text-xl md:text-2xl mb-12 text-gray-700 max-w-3xl mx-auto">
+            Soluciones predictivas para potenciar tu estrategia de negocio
+          </p>
+
+          <div className="simple-grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 p-8 rounded-xl border-t-4 border-orange-500">
+              <div className="w-20 h-20 rounded-full bg-orange-100 flex-center mb-6 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-primary">Anticipación Estratégica</h3>
+              <p className="text-lg text-gray-700">
+                Transforma incertidumbres en predicciones accionables para tomar decisiones con mayor confianza
+              </p>
+            </div>
+
+            <div className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 p-8 rounded-xl border-t-4 border-purple-500">
+              <div className="w-20 h-20 rounded-full bg-purple-100 flex-center mb-6 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-primary">Innovación Aplicada</h3>
+              <p className="text-lg text-gray-700">
+                Implementa soluciones de IA predictiva directamente alineadas con tus desafíos de negocio
+              </p>
+            </div>
+
+            <div className="card bg-white shadow-xl hover:shadow-2xl transition-all duration-300 p-8 rounded-xl border-t-4 border-green-500">
+              <div className="w-20 h-20 rounded-full bg-green-100 flex-center mb-6 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-4 text-primary">Eficiencia Operativa</h3>
+              <p className="text-lg text-gray-700">
+                Reduce tiempos de implementación y maximiza el ROI de tus iniciativas de transformación
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sobre el Programa */}
+      <section id="sobre" className="py-24 bg-primary text-white">
+        <div className="container-section">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            Sobre el Programa
+          </h2>
+          <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed">
+            Un enfoque innovador para convertir desafíos empresariales en oportunidades predictivas
+          </p>
+
+          <div className="simple-grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-primary-dark p-8 rounded-xl shadow-lg hover:shadow-xl transition-all border-l-4 border-secondary">
+              <h3 className="text-2xl font-bold mb-4 text-secondary">Enfoque Integral</h3>
+              <p className="text-lg text-white/90">Combinamos estrategia de negocio, ciencia de datos y gestión del cambio</p>
+            </div>
+            <div className="bg-primary-dark p-8 rounded-xl shadow-lg hover:shadow-xl transition-all border-l-4 border-orange-400">
+              <h3 className="text-2xl font-bold mb-4 text-orange-400">Resultados Medibles</h3>
+              <p className="text-lg text-white/90">Nos enfocamos en KPIs concretos y resultados de negocio tangibles</p>
+            </div>
+            <div className="bg-primary-dark p-8 rounded-xl shadow-lg hover:shadow-xl transition-all border-l-4 border-emerald-400">
+              <h3 className="text-2xl font-bold mb-4 text-emerald-400">Transferencia de Conocimiento</h3>
+              <p className="text-lg text-white/90">Capacitamos a tu equipo para desarrollar capacidades predictivas internas</p>
+            </div>
+            <div className="bg-primary-dark p-8 rounded-xl shadow-lg hover:shadow-xl transition-all border-l-4 border-purple-400">
+              <h3 className="text-2xl font-bold mb-4 text-purple-400">Implementación Acelerada</h3>
+              <p className="text-lg text-white/90">Nuestra metodología permite obtener resultados en semanas, no meses</p>
+            </div>
+          </div>
+
+          <div className="mt-12 max-w-3xl mx-auto">
+            <div className="bg-primary-dark p-8 rounded-xl shadow-lg border-t-4 border-secondary">
+              <h3 className="text-2xl font-bold mb-4 text-secondary">¿Qué es Predictive Business Reframing™?</h3>
+              <p className="text-lg text-white/90">Un programa innovador que transforma los desafíos empresariales en problemas de predicción aplicables a IA, permitiendo aprovechar el poder de la inteligencia artificial para resolver problemas complejos de negocio</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Metodología */}
+      <section id="metodologia" className="py-24 bg-light">
+        <div className="container-section">
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 text-primary">
+            Nuestra Metodología
+          </h2>
+          <p className="text-lg md:text-xl mb-12">
+            Un enfoque estructurado en 4 fases para transformar desafíos en predicciones
+          </p>
+
+          <div className="timeline-container">
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-secondary transform -translate-x-1/2"></div>
+            
+            <div className="timeline-item">
+              <div className="flex flex-col md:flex-row items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-secondary text-white flex-center font-bold text-xl">1</div>
+                <div className="mt-4 md:mt-0 md:ml-8 text-center">
+                  <h3 className="text-2xl font-bold mb-2">Identificar</h3>
+                  <p className="text-gray-700">
+                    Analizamos los desafíos empresariales y objetivos estratégicos para identificar oportunidades
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="flex flex-col md:flex-row items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-purple-500 text-white flex-center font-bold text-xl">2</div>
+                <div className="mt-4 md:mt-0 md:ml-8 text-center">
+                  <h3 className="text-2xl font-bold mb-2">Reformular</h3>
+                  <p className="text-gray-700">
+                    Convertimos los desafíos en problemas de predicción específicos con variables medibles
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="flex flex-col md:flex-row items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-green-500 text-white flex-center font-bold text-xl">3</div>
+                <div className="mt-4 md:mt-0 md:ml-8 text-center">
+                  <h3 className="text-2xl font-bold mb-2">Mapear Datos</h3>
+                  <p className="text-gray-700">
+                    Identificamos las fuentes de datos y diseñamos la arquitectura para los modelos predictivos
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item mb-0">
+              <div className="flex flex-col md:flex-row items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-blue-500 text-white flex-center font-bold text-xl">4</div>
+                <div className="mt-4 md:mt-0 md:ml-8 text-center">
+                  <h3 className="text-2xl font-bold mb-2">Diseñar Caso de Uso</h3>
+                  <p className="text-gray-700">
+                    Desarrollamos un caso de uso completo con modelos predictivos e interfaces
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Resultados */}
+      <section id="resultados" className="py-24 bg-primary text-white">
+        <div className="container-section">
+          <h2 className="text-3xl md:text-5xl font-bold mb-12">
+            Resultados Comprobados
+          </h2>
+
+          <div className="simple-grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-primary-dark p-8 rounded-lg shadow-lg hover:shadow-xl transition-all">
+              <div className="text-5xl md:text-6xl font-bold mb-4 text-secondary">83%</div>
+              <h3 className="text-2xl font-bold mb-4">Mejora en Precisión</h3>
+              <p className="text-white/90 text-lg">Incremento promedio en la precisión de predicciones estratégicas</p>
+            </div>
+            <div className="bg-primary-dark p-8 rounded-lg shadow-lg hover:shadow-xl transition-all">
+              <div className="text-5xl md:text-6xl font-bold mb-4 text-orange-400">40%</div>
+              <h3 className="text-2xl font-bold mb-4">Reducción de Costos</h3>
+              <p className="text-white/90 text-lg">Reducción promedio en costos operativos tras implementación</p>
+            </div>
+            <div className="bg-primary-dark p-8 rounded-lg shadow-lg hover:shadow-xl transition-all">
+              <div className="text-5xl md:text-6xl font-bold mb-4 text-emerald-400">2x</div>
+              <h3 className="text-2xl font-bold mb-4">ROI Promedio</h3>
+              <p className="text-white/90 text-lg">Retorno de inversión promedio en el primer año de implementación</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Casos de Uso */}
+      <section id="casos" className="py-24 bg-white">
+        <div className="container-section">
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 text-primary">
+            Casos de Uso
+          </h2>
+          <p className="text-lg md:text-xl mb-12">
+            Resultados reales en diferentes industrias
+          </p>
+
+          <div className="simple-grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-light p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
+              <h3 className="text-2xl font-bold mb-4 text-primary">Sector Financiero</h3>
+              <p className="mb-6">Transformación de análisis de riesgo crediticio en un sistema predictivo</p>
+              <div className="flex justify-center gap-4">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-orange-500">35%</div>
+                  <p className="text-sm">Reducción en falsos negativos</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-green-500">28%</div>
+                  <p className="text-sm">Incremento en aprobaciones</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-light p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
+              <h3 className="text-2xl font-bold mb-4 text-primary">Manufactura</h3>
+              <p className="mb-6">Sistema predictivo de fallos de equipamiento industrial</p>
+              <div className="flex justify-center gap-4">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-purple-500">62%</div>
+                  <p className="text-sm">Reducción de inactividad</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-500">40%</div>
+                  <p className="text-sm">Ahorro en mantenimiento</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-light p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
+              <h3 className="text-2xl font-bold mb-4 text-primary">Retail</h3>
+              <p className="mb-6">Sistema predictivo de demanda por tienda y SKU</p>
+              <div className="flex justify-center gap-4">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-cyan-500">42%</div>
+                  <p className="text-sm">Reducción de roturas de stock</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-amber-500">18%</div>
+                  <p className="text-sm">Incremento en margen bruto</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-light p-8 rounded-lg shadow-md hover:shadow-lg transition-all">
+              <h3 className="text-2xl font-bold mb-4 text-primary">Salud</h3>
+              <p className="mb-6">Sistema predictivo de necesidades de pacientes</p>
+              <div className="flex justify-center gap-4">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-emerald-500">45%</div>
+                  <p className="text-sm">Reducción en tiempos de espera</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-indigo-500">32%</div>
+                  <p className="text-sm">Aumento en satisfacción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section id="contacto" className="py-24 bg-gradient-to-br from-primary via-primary-dark to-primary text-white">
+        <div className="container-section">
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+            ¿Listo para transformar tus desafíos en predicciones?
+          </h2>
+          <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed">
+            Agenda un diagnóstico gratuito y descubre cómo podemos ayudar a tu organización
+          </p>
+          <div className="flex justify-center">
+            <a href="#contacto" className="btn-secondary text-lg px-10 py-5 text-xl font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+              Agenda tu Diagnóstico
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default LandingPage;
+
+// ===== globals.css =====
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0A1F44;
+  --primary-dark: #061530;
+  --secondary: #00C2FF;
+  --light: #f5f8ff;
+  --text-dark: #1a202c;
+  --text-medium: #4a5568;
+  --text-light: #a0aec0;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-800 font-sans;
+    text-align: center;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-center;
+  }
+
+  p {
+    @apply mb-4 text-center;
+  }
+  
+  section {
+    @apply text-center;
+  }
+}
+
+@layer components {
+  .container-section {
+    @apply max-w-6xl mx-auto px-6;
+  }
+
+  .btn-primary {
+    @apply inline-block bg-secondary text-primary font-bold rounded-full transition-all hover:bg-white hover:text-primary shadow-lg px-8 py-4;
+  }
+
+  .btn-secondary {
+    @apply inline-block bg-white text-primary font-bold rounded-full transition-all hover:bg-secondary hover:text-primary shadow-lg px-8 py-4;
+  }
+
+  .btn-outline {
+    @apply inline-block border-2 border-white text-white font-bold rounded-full transition-all hover:bg-white hover:text-primary px-8 py-4;
+  }
+
+  .card {
+    @apply p-8 rounded-lg bg-white shadow-lg hover:shadow-xl transition-all text-center;
+  }
+
+  .cta-container {
+    @apply flex flex-col sm:flex-row justify-center gap-6;
+  }
+
+  .simple-grid {
+    @apply grid gap-8;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .timeline-container {
+    @apply relative max-w-4xl mx-auto;
+  }
+
+  .timeline-item {
+    @apply relative z-10 mb-16 text-center;
+  }
+}
+
+/* Mejoras de contraste y legibilidad */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+/* Mejoras de espaciado y alineación */
+section {
+  @apply overflow-hidden;
+}
+
+/* Mejoras de tamaño de texto para accesibilidad */
+.text-enhanced-lg {
+  @apply text-lg leading-relaxed;
+}
+
+.text-enhanced-xl {
+  @apply text-xl leading-relaxed;
+}
+
+/* Mejoras para evitar superposiciones y centrar textos */
+.landing-page section {
+  @apply relative;
+}
+
+.landing-page h1, 
+.landing-page h2, 
+.landing-page h3 {
+  @apply mx-auto text-center;
+}
+
+.landing-page p {
+  @apply mx-auto max-w-3xl text-center;
+}
+
+/* Centrado de elementos adicionales */
+.simple-grid {
+  @apply text-center;
+}
+
+details summary {
+  @apply text-center;
+}
+
+details div {
+  @apply text-center;
+}
+
+ul, ol {
+  @apply text-center mx-auto;
+  list-style-position: inside;
+}
+
+/* Ajustes para evitar superposición en el menú */
+nav {
+  @apply py-6;
+}
+
+.navbar-container {
+  @apply flex justify-between items-center;
+}
+
+.logo-container {
+  @apply flex items-center;
+}
+
+.nav-links {
+  @apply hidden md:flex items-center space-x-8;
+}
+
+.mobile-menu-button {
+  @apply md:hidden;
+}
+
+.mobile-menu {
+  @apply fixed inset-0 bg-primary z-50 flex flex-col items-center justify-center;
+}
+
+/* Mejoras para evitar superposición del menú con el contenido */
+header {
+  @apply z-50;
+}
+
+header a.text-xl, 
+header a.text-2xl {
+  @apply whitespace-nowrap;
+}
+
+#hero {
+  @apply pt-48 md:pt-40;
+}
+
+/* Ajustes para mejorar la experiencia en móvil */
+@media (max-width: 768px) {
+  .landing-page h1 {
+    @apply text-4xl;
+  }
+  
+  .landing-page h2 {
+    @apply text-3xl;
+  }
+  
+  .landing-page h3 {
+    @apply text-xl;
+  }
+  
+  .landing-page p {
+    @apply text-base;
+  }
+  
+  .landing-page .btn-primary,
+  .landing-page .btn-secondary,
+  .landing-page .btn-outline {
+    @apply px-6 py-3 text-base;
+  }
+  
+  .card {
+    @apply p-6;
+  }
+  
+  .timeline-item {
+    @apply mb-12;
+  }
+  
+  .simple-grid {
+    @apply gap-6;
+  }
+  
+  section {
+    @apply py-16;
+  }
+}
+
+/* Ajustes para evitar superposición en el hero */
+#hero {
+  @apply pt-40;
+}
+
+/* Ajustes para mejorar la experiencia en tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .landing-page h1 {
+    @apply text-4xl;
+  }
+  
+  .landing-page h2 {
+    @apply text-3xl;
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1025px) {
+  .container-section {
+    @apply max-w-5xl;
+  }
+}
+
+// ===== layout.tsx =====
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import { poppins, playfair } from './fonts';
+import './globals.css';
+
+export const metadata = {
+  title: 'Predictive Business Reframing™ | Redefiniendo desafíos. Prediciendo futuros.',
+  description: 'Convierte desafíos de negocio en problemas de predicción aplicables a IA. Programa para líderes empresariales interesados en innovación predictiva.',
+  keywords: 'predictive business, reframing, IA, inteligencia artificial, innovación, predicción, estrategia empresarial',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="es" className={`${poppins.variable} ${playfair.variable}`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#0A1F44" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
+      <body className="min-h-screen flex flex-col">
+        <Navbar />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
+
+// ===== fonts.ts =====
+import { Playfair_Display, Poppins } from 'next/font/google';
+
+export const playfair = Playfair_Display({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-playfair',
+});
+
+export const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins',
+});
+
+// ===== Navbar.tsx =====
+"use client";
+
+import React from 'react';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
+
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('/');
+
+  // Detectar scroll para cambiar estilo de navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    // Detectar la ruta actual
+    setActiveSection(window.location.pathname);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Cerrar menú al cambiar de tamaño de pantalla
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isMenuOpen]);
+
+  return (
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled ? 'bg-white/95 dark:bg-primary/95 shadow-md backdrop-blur-sm py-3' : 'bg-transparent py-5'
+    }`}>
+      <div className="container-section flex flex-col md:flex-row items-center justify-between">
+        {/* Logo */}
+        <div className="mb-6 md:mb-0 md:mr-8 py-2">
+          <Link href="/" className="text-xl md:text-2xl font-bold text-primary dark:text-white hover:text-secondary transition-colors duration-300">
+            Predictive Business Reframing™
+          </Link>
+        </div>
+
+        {/* Navegación Desktop */}
+        <nav className="hidden md:flex items-center justify-center space-x-6 flex-grow">
+          <Link href="/" className={`nav-link ${activeSection === '/' ? 'text-secondary' : ''}`}>
+            Inicio
+          </Link>
+          <Link href="#sobre" className="nav-link">
+            Sobre
+          </Link>
+          <Link href="#metodologia" className="nav-link">
+            Metodología
+          </Link>
+          <Link href="#beneficios" className="nav-link">
+            Beneficios
+          </Link>
+          <Link href="#casos" className="nav-link">
+            Casos
+          </Link>
+          <Link href="#contacto" className="nav-link">
+            Contacto
+          </Link>
+        </nav>
+
+        {/* Botón de menú móvil */}
+        <button 
+          className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-md focus:outline-none absolute right-6 top-6"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+        >
+          <span className={`block w-6 h-0.5 bg-primary dark:bg-white transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1' : ''}`}></span>
+          <span className={`block w-6 h-0.5 bg-primary dark:bg-white mt-1.5 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+          <span className={`block w-6 h-0.5 bg-primary dark:bg-white mt-1.5 transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1' : ''}`}></span>
+        </button>
+      </div>
+
+      {/* Menú móvil */}
+      <div 
+        className={`md:hidden absolute w-full bg-white dark:bg-primary shadow-lg transition-all duration-300 ease-in-out ${
+          isMenuOpen ? 'max-h-screen opacity-100 py-4' : 'max-h-0 opacity-0 overflow-hidden'
+        }`}
+      >
+        <nav className="flex flex-col space-y-4 px-6">
+          <Link 
+            href="/" 
+            className="nav-link text-lg py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Inicio
+          </Link>
+          <Link 
+            href="#sobre" 
+            className="nav-link text-lg py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Sobre
+          </Link>
+          <Link 
+            href="#metodologia" 
+            className="nav-link text-lg py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Metodología
+          </Link>
+          <Link 
+            href="#beneficios" 
+            className="nav-link text-lg py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Beneficios
+          </Link>
+          <Link 
+            href="#casos" 
+            className="nav-link text-lg py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Casos
+          </Link>
+          <Link 
+            href="#contacto" 
+            className="nav-link text-lg py-2"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Contacto
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;
+
+// ===== Footer.tsx =====
+import React from 'react';
+import Link from 'next/link';
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
+  return (
+    <footer className="bg-primary text-white">
+      <div className="container-section py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {/* Logo y descripción */}
+          <div className="text-center md:text-left">
+            <h3 className="text-xl font-bold mb-4">
+              Predictive Business Reframing™
+            </h3>
+            <p className="mb-6">
+              Transformando desafíos empresariales en problemas de predicción aplicables a IA
+            </p>
+            <div className="flex justify-center md:justify-start space-x-4">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-secondary transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-secondary transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          
+          {/* Enlaces rápidos */}
+          <div className="text-center">
+            <h3 className="text-xl font-semibold mb-5 text-secondary">Enlaces Rápidos</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="#hero" className="text-white hover:text-secondary transition-colors">
+                  Inicio
+                </a>
+              </li>
+              <li>
+                <a href="#sobre" className="text-white hover:text-secondary transition-colors">
+                  Sobre el Programa
+                </a>
+              </li>
+              <li>
+                <a href="#metodologia" className="text-white hover:text-secondary transition-colors">
+                  Metodología
+                </a>
+              </li>
+              <li>
+                <a href="#beneficios" className="text-white hover:text-secondary transition-colors">
+                  Beneficios
+                </a>
+              </li>
+              <li>
+                <a href="#casos" className="text-white hover:text-secondary transition-colors">
+                  Casos de Uso
+                </a>
+              </li>
+              <li>
+                <a href="#contacto" className="text-white hover:text-secondary transition-colors">
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          {/* Contacto */}
+          <div className="text-center md:text-left">
+            <h3 className="text-xl font-semibold mb-5 text-secondary">Contacto</h3>
+            <ul className="space-y-4">
+              <li className="flex items-center justify-center md:justify-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-secondary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span>info@predictivereframing.com</span>
+              </li>
+              <li className="flex items-center justify-center md:justify-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-secondary mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span>+1 (555) 123-4567</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        {/* Línea divisoria */}
+        <div className="border-t border-white/20 mt-10 pt-6 text-center">
+          <p>
+            &copy; {currentYear} Predictive Business Reframing™. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+
+// ===== tailwind.config.ts =====
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#0A1F44',
+          dark: '#061631',
+        },
+        secondary: {
+          DEFAULT: '#00C2FF',
+          dark: '#0099cc',
+        },
+        accent: {
+          orange: '#FF6B35',
+          purple: '#9B5DE5',
+          green: '#14B8A6',
+        },
+        light: '#F5F9FF',
+        text: {
+          dark: '#1A202C',
+          medium: '#4A5568',
+          light: '#A0AEC0',
+        }
+      },
+      fontFamily: {
+        sans: ['var(--font-poppins)', 'sans-serif'],
+        heading: ['var(--font-playfair)', 'serif'],
+      },
+      spacing: {
+        '72': '18rem',
+        '84': '21rem',
+        '96': '24rem',
+      },
+      maxWidth: {
+        '8xl': '88rem',
+      },
+      boxShadow: {
+        'soft': '0 4px 20px rgba(0, 0, 0, 0.05)',
+        'medium': '0 6px 30px rgba(0, 0, 0, 0.1)',
+      },
+      borderRadius: {
+        'xl': '1rem',
+        '2xl': '1.5rem',
+      },
+      zIndex: {
+        '-10': '-10',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out forwards',
+        'slide-up': 'slideUp 0.5s ease-in-out forwards',
+        'slide-down': 'slideDown 0.5s ease-in-out forwards',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
+export default config
